@@ -1,0 +1,130 @@
+body {
+    background-color: beige;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    min-width: 260px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.img-container {
+    width: 50%;
+    background-color: rgba(128, 128, 128, 0.232);
+    margin: 0 auto;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.485);
+}
+
+.in-box-img {
+    width: 100%;
+    position: static;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description {
+    margin: 3em 0;
+}
+
+.content {
+    margin-bottom: 2em;
+}
+
+.ingredients {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(185, 185, 204, 0.83) 0%, rgba(188, 243, 255, 0.83) 100%);
+    padding: 0.1em 0;
+    border-radius: 5%;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.485);
+    height: fit-content;
+}
+
+.ingredients ul {
+    padding-left: 0;
+}
+
+.ingredients li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingredients li p {
+    margin: 0 1.2em;
+}
+
+.ingredients li strong {
+    margin-left: 1.2em;
+    color: rgb(51, 51, 51);
+}
+
+hr {
+    color: rgba(204, 204, 208, 0.774);
+}
+
+.steps {
+    margin-top: 3em;
+}
+
+.steps p {
+    font-size: 1.2rem;
+    font-family: 'Reenie Beanie';
+}
+
+.steps ul,
+li {
+    list-style: none;
+}
+
+.steps ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.steps ul li a {
+    text-decoration: none;
+    color: #000;
+    background: #ffc;
+    display: block;
+    width: 13em;
+    padding: 1em;
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+    transform: rotate(-6deg);
+}
+
+ul li:nth-child(even) a {
+    transform: rotate(4deg);
+    position: relative;
+    top: 5px;
+}
+
+ul li a:hover,
+ul li a:focus,
+ul li a:active {
+    cursor: pointer;
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+    transform: scale(1.5);
+    position: relative;
+    z-index: 5;
+}
+
+.steps ul li {
+    margin: 0.7em;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ingredients,
+    .steps {
+        width: 45%;
+        margin: 1em;
+    }
+}
